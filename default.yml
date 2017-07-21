@@ -7,11 +7,13 @@ AllCops:
     - "bin/**/*"
     - "lib/tasks/**/*"
     - "db/**/*"
-    - "config/initializers/devise.rb"
     - "spec/dummy/bin/**/*"
     - "spec/dummy/lib/tasks/**/*"
     - "spec/dummy/db/**/*"
-  UseCache: false
+    - "tmp/**/*"
+    - "spec/dummy/tmp/**/*"
+    - "vendor/bundle/**/*"
+  UseCache: true
   DisabledByDefault: false
 
 # Linting #

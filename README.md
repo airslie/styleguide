@@ -47,5 +47,5 @@ To re-release a new version of this gem
 ```
 # Change version in lib/style/version
 # Commit the changes locally
-$ bundle exec rake release
+$ OVERCOMMIT_DISABLE=1 bundle exec rake release
 ```
