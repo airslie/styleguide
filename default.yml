@@ -1,8 +1,12 @@
 require: rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.3
+  DisplayCopNames: true
+  TargetRubyVersion: 2.4
+  # Default excludes. Note if a .rubocop.yml in a project dir overrides Exclude then
+  # Rubocop replaces all these defaults rather than merging them.
   Exclude:
+    - "*.gemspec"
     - "vendor/**/*"
     - "bin/**/*"
     - "lib/tasks/**/*"
@@ -16,23 +20,17 @@ AllCops:
   UseCache: true
   DisabledByDefault: false
 
-# Linting #
-
 Lint/UnusedMethodArgument:
   Enabled: false
 
 Style/SpecialGlobalVars:
   Enabled: false
 
-###################### Metrics ####################################
-
 Metrics/BlockLength:
   Enabled: false
 
 Metrics/AbcSize:
   Enabled: true
-  Exclude:
-    - "features/**/*"
   Max: 15
 
 Metrics/LineLength:
@@ -42,24 +40,15 @@ Metrics/LineLength:
   URISchemes:
     - http
     - https
-  Exclude:
-    - "features/renalware/**/*"
-    - "features/step_definitions/**/*"
   Enabled: true
 
 Metrics/MethodLength:
   Enabled: true
   Max: 10
-  Exclude:
-    - "features/**/*"
 
 Metrics/ModuleLength:
   Enabled: true
   Max: 100
-  Exclude:
-    - "features/**/*"
-
-# ##################### Rails ##################################
 
 Rails/HasAndBelongsToMany:
   Enabled: false
@@ -67,21 +56,19 @@ Rails/HasAndBelongsToMany:
 Rails/Validation:
   Enabled: false
 
-# ################## Style #################################
-
 Style/AccessorMethodName:
   Enabled: true
 
 Style/Alias:
   Enabled: true
 
-Layout/AlignArray:
+Style/AlignArray:
   Enabled: false
 
-Layout/AlignHash:
+Style/AlignHash:
   Enabled: false
 
-Layout/AlignParameters:
+Style/AlignParameters:
   Enabled: false
 
 Style/BarePercentLiterals:
@@ -93,28 +80,25 @@ Style/BlockDelimiters:
 Style/BracesAroundHashParameters:
   Enabled: false
 
-Layout/ClosingParenthesisIndentation:
+Style/ClosingParenthesisIndentation:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
 
-Layout/EmptyLines:
+Style/EmptyLines:
   Enabled: true
-  Exclude:
-    - "features/**/*"
-    - "config/**/*"
 
-Layout/EmptyLinesAroundBlockBody:
+Style/EmptyLinesAroundBlockBody:
   Enabled: false
 
-Layout/EmptyLinesAroundClassBody:
+Style/EmptyLinesAroundClassBody:
   Enabled: false
 
-Layout/EmptyLinesAroundModuleBody:
+Style/EmptyLinesAroundModuleBody:
   Enabled: false
 
-Layout/FirstParameterIndentation:
+Style/FirstParameterIndentation:
   Enabled: false
 
 Style/FormatString:
@@ -135,8 +119,6 @@ Style/PredicateName:
   Enabled: false
 
 Style/RegexpLiteral:
-  Exclude:
-    - features/**/*
   Enabled: true
 
 Style/SignalException:
@@ -145,7 +127,7 @@ Style/SignalException:
 Style/SingleLineBlockParams:
   Enabled: false
 
-Layout/SpaceBeforeBlockBraces:
+Style/SpaceBeforeBlockBraces:
   Enabled: false
 
 Style/StringLiterals:
@@ -158,10 +140,10 @@ Style/StringLiterals:
 Style/WhenThen:
   Enabled: false
 
-Layout/MultilineMethodCallIndentation:
+Style/MultilineMethodCallIndentation:
   Enabled: false
 
-Layout/MultilineMethodCallBraceLayout:
+Style/MultilineMethodCallBraceLayout:
   Enabled: false
 
 Style/VariableNumber:
@@ -176,7 +158,7 @@ Style/NumericLiteralPrefix:
 Style/ClassAndModuleChildren:
   Enabled: false
 
-Layout/MultilineHashBraceLayout:
+Style/MultilineHashBraceLayout:
   Enabled: false
 
 Style/AsciiComments:
@@ -185,7 +167,7 @@ Style/AsciiComments:
 Style/NumericPredicate:
   Enabled: false
 
-Layout/MultilineArrayBraceLayout:
+Style/MultilineArrayBraceLayout:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
@@ -194,7 +176,7 @@ Style/FrozenStringLiteralComment:
 Style/TernaryParentheses:
   Enabled: false
 
-Layout/DotPosition:
+Style/DotPosition:
   Enabled: true
   EnforcedStyle: leading
 
@@ -212,6 +194,3 @@ Style/PercentLiteralDelimiters:
     '%W': '()'
     '%i': '()'
     '%I': '()'
-
-Lint/AmbiguousBlockAssociation:
-  Enabled: false

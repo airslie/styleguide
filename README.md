@@ -42,7 +42,7 @@ $ bundle exec rubocop
 
 You do not need to include rubocop directly in your application's dependences. Airslie-style will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
 
-To re-release a new version of this gem
+To re-release a new version of this gem:
 
 ```
 # Change version in lib/style/version
