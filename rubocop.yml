@@ -60,13 +60,13 @@ Style/AccessorMethodName:
 Style/Alias:
   Enabled: true
 
-Style/AlignArray:
+Layout/AlignArray:
   Enabled: false
 
-Style/AlignHash:
+Layout/AlignHash:
   Enabled: false
 
-Style/AlignParameters:
+Layout/AlignParameters:
   Enabled: false
 
 Style/BarePercentLiterals:
@@ -78,25 +78,25 @@ Style/BlockDelimiters:
 Style/BracesAroundHashParameters:
   Enabled: false
 
-Style/ClosingParenthesisIndentation:
+Layout/ClosingParenthesisIndentation:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
 
-Style/EmptyLines:
+Layout/EmptyLines:
   Enabled: true
 
-Style/EmptyLinesAroundBlockBody:
+Layout/EmptyLinesAroundBlockBody:
   Enabled: false
 
-Style/EmptyLinesAroundClassBody:
+Layout/EmptyLinesAroundClassBody:
   Enabled: false
 
-Style/EmptyLinesAroundModuleBody:
+Layout/EmptyLinesAroundModuleBody:
   Enabled: false
 
-Style/FirstParameterIndentation:
+Layout/FirstParameterIndentation:
   Enabled: false
 
 Style/FormatString:
@@ -125,7 +125,7 @@ Style/SignalException:
 Style/SingleLineBlockParams:
   Enabled: false
 
-Style/SpaceBeforeBlockBraces:
+Layout/SpaceBeforeBlockBraces:
   Enabled: false
 
 Style/StringLiterals:
@@ -138,10 +138,10 @@ Style/StringLiterals:
 Style/WhenThen:
   Enabled: false
 
-Style/MultilineMethodCallIndentation:
+Layout/MultilineMethodCallIndentation:
   Enabled: false
 
-Style/MultilineMethodCallBraceLayout:
+Layout/MultilineMethodCallBraceLayout:
   Enabled: false
 
 Style/VariableNumber:
@@ -156,7 +156,7 @@ Style/NumericLiteralPrefix:
 Style/ClassAndModuleChildren:
   Enabled: false
 
-Style/MultilineHashBraceLayout:
+Layout/MultilineHashBraceLayout:
   Enabled: false
 
 Style/AsciiComments:
@@ -165,7 +165,7 @@ Style/AsciiComments:
 Style/NumericPredicate:
   Enabled: false
 
-Style/MultilineArrayBraceLayout:
+Layout/MultilineArrayBraceLayout:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
@@ -174,7 +174,7 @@ Style/FrozenStringLiteralComment:
 Style/TernaryParentheses:
   Enabled: false
 
-Style/DotPosition:
+Layout/DotPosition:
   Enabled: true
   EnforcedStyle: leading
 
