@@ -1,0 +1,215 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - "vendor/**/*"
+    - "bin/**/*"
+    - "lib/tasks/**/*"
+    - "db/**/*"
+    - "config/initializers/devise.rb"
+    - "spec/dummy/bin/**/*"
+    - "spec/dummy/lib/tasks/**/*"
+    - "spec/dummy/db/**/*"
+  UseCache: false
+  DisabledByDefault: false
+
+# Linting #
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+Style/SpecialGlobalVars:
+  Enabled: false
+
+###################### Metrics ####################################
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: true
+  Exclude:
+    - "features/**/*"
+  Max: 15
+
+Metrics/LineLength:
+  Max: 100
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+  Exclude:
+    - "features/renalware/**/*"
+    - "features/step_definitions/**/*"
+  Enabled: true
+
+Metrics/MethodLength:
+  Enabled: true
+  Max: 10
+  Exclude:
+    - "features/**/*"
+
+Metrics/ModuleLength:
+  Enabled: true
+  Max: 100
+  Exclude:
+    - "features/**/*"
+
+# ##################### Rails ##################################
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/Validation:
+  Enabled: false
+
+# ################## Style #################################
+
+Style/AccessorMethodName:
+  Enabled: true
+
+Style/Alias:
+  Enabled: true
+
+Layout/AlignArray:
+  Enabled: false
+
+Layout/AlignHash:
+  Enabled: false
+
+Layout/AlignParameters:
+  Enabled: false
+
+Style/BarePercentLiterals:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/EmptyLines:
+  Enabled: true
+  Exclude:
+    - "features/**/*"
+    - "config/**/*"
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: false
+
+Layout/FirstParameterIndentation:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/LambdaCall:
+  Exclude:
+    - Guardfile
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/PredicateName:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Exclude:
+    - features/**/*
+  Enabled: true
+
+Style/SignalException:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+  SupportedStyles:
+  - single_quotes
+  - double_quotes
+
+Style/WhenThen:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: false
+
+Style/VariableNumber:
+  Enabled: false
+
+Style/Alias:
+  Enabled: false
+
+Style/NumericLiteralPrefix:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Layout/MultilineHashBraceLayout:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Layout/MultilineArrayBraceLayout:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/TernaryParentheses:
+  Enabled: false
+
+Layout/DotPosition:
+  Enabled: true
+  EnforcedStyle: leading
+
+Style/GuardClause:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: ()
+    '%r': '{}'
+    '%w': '()'
+    '%W': '()'
+    '%i': '()'
+    '%I': '()'
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
