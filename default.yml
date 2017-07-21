@@ -1,8 +1,8 @@
 require: rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.3
   Exclude:
+    - "*.gemspec"
     - "vendor/**/*"
     - "bin/**/*"
     - "lib/tasks/**/*"
@@ -16,23 +16,17 @@ AllCops:
   UseCache: true
   DisabledByDefault: false
 
-# Linting #
-
 Lint/UnusedMethodArgument:
   Enabled: false
 
 Style/SpecialGlobalVars:
   Enabled: false
 
-###################### Metrics ####################################
-
 Metrics/BlockLength:
   Enabled: false
 
 Metrics/AbcSize:
   Enabled: true
-  Exclude:
-    - "features/**/*"
   Max: 15
 
 Metrics/LineLength:
@@ -42,32 +36,21 @@ Metrics/LineLength:
   URISchemes:
     - http
     - https
-  Exclude:
-    - "features/renalware/**/*"
-    - "features/step_definitions/**/*"
   Enabled: true
 
 Metrics/MethodLength:
   Enabled: true
   Max: 10
-  Exclude:
-    - "features/**/*"
 
 Metrics/ModuleLength:
   Enabled: true
   Max: 100
-  Exclude:
-    - "features/**/*"
-
-# ##################### Rails ##################################
 
 Rails/HasAndBelongsToMany:
   Enabled: false
 
 Rails/Validation:
   Enabled: false
-
-# ################## Style #################################
 
 Style/AccessorMethodName:
   Enabled: true
@@ -101,9 +84,6 @@ Style/Documentation:
 
 Layout/EmptyLines:
   Enabled: true
-  Exclude:
-    - "features/**/*"
-    - "config/**/*"
 
 Layout/EmptyLinesAroundBlockBody:
   Enabled: false
@@ -135,8 +115,6 @@ Style/PredicateName:
   Enabled: false
 
 Style/RegexpLiteral:
-  Exclude:
-    - features/**/*
   Enabled: true
 
 Style/SignalException:
