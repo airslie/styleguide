@@ -1,51 +1,37 @@
-# airslie-style
+# Airslie Style Guide
 
-Airslie shared style configs.
+Airslie shared style configuration and guide.
 
-## Installation
+## Rubocop
 
-Add this line to your application's Gemfile:
+To use the shared rubocop configuration in a project use the following three files:
 
-```ruby
-group :test, :development do
-  gem 'airslie-style'
-end
-```
-
-Or, for a Ruby library, add this to your gemspec:
-
-```ruby
-spec.add_development_dependency 'airslie-style'
-```
-
-And then run:
-
-```bash
-$ bundle install
-```
-
-## Usage
-
-Create a `.rubocop.yml` with the following directives:
-
+.codeclimate.yml
 ```yaml
-inherit_gem:
-  airslie-style:
-    - default.yml
+prepare:
+  fetch:
+  - url: "https://raw.githubusercontent.com/airslie/airslie-styleguide/master/rubocop.yml"
+    path: "default.yml"
 ```
 
-Now, run:
-
-```bash
-$ bundle exec rubocop
+.rubocop.yml
+```yaml
+# Note that the local default.yml is overwritten on CodeClimate with the contents of
+# the remote rubocop.yml pulled from GitHub in a codeclimate prepare step.
+inherit_from:
+  - default.yml
 ```
 
-You do not need to include rubocop directly in your application's dependences. Airslie-style will include a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
+default.yml
+```yaml
+inherit_from:
+  - https://raw.githubusercontent.com/airslie/airslie-styleguide/master/rubocop.yml
 
-To re-release a new version of this gem:
+# Don't add anything to this file other than the inherit_from above
+# as this file is overwritten on codeclimate with the contents of the above
+# remote url which is downloaded in a codeclimate prepare step.
+```
 
-```
-# Change version in lib/style/version
-# Commit the changes locally
-$ OVERCOMMIT_DISABLE=1 bundle exec rake release
-```
+When running locally, rubocop inherits from the remote github styleguide default.yml.
+When running on CodeClimate, a prepare step replaces the local default.yml with the remote
+styleguide one.
