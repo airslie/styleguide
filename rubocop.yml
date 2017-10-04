@@ -54,7 +54,7 @@ Rails/HasAndBelongsToMany:
 Rails/Validation:
   Enabled: false
 
-Style/AccessorMethodName:
+Naming/AccessorMethodName:
   Enabled: true
 
 Style/Alias:
@@ -113,7 +113,7 @@ Style/LambdaCall:
 Style/NumericLiterals:
   Enabled: false
 
-Style/PredicateName:
+Naming/PredicateName:
   Enabled: false
 
 Style/RegexpLiteral:
@@ -144,7 +144,7 @@ Layout/MultilineMethodCallIndentation:
 Layout/MultilineMethodCallBraceLayout:
   Enabled: false
 
-Style/VariableNumber:
+Naming/VariableNumber:
   Enabled: false
 
 Style/Alias:
