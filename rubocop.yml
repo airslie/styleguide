@@ -42,7 +42,7 @@ Metrics/LineLength:
 
 Metrics/MethodLength:
   Enabled: true
-  Max: 10
+  Max: 12
 
 Metrics/ModuleLength:
   Enabled: true
