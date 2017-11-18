@@ -18,6 +18,9 @@ AllCops:
   UseCache: true
   DisabledByDefault: false
 
+Performance/RegexpMatch:
+  Enabled: false
+
 Lint/UnusedMethodArgument:
   Enabled: false
 
