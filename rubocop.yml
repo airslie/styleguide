@@ -94,13 +94,13 @@ Layout/EmptyLines:
   Enabled: true
 
 Layout/EmptyLinesAroundBlockBody:
-  Enabled: false
+  Enabled: true
 
 Layout/EmptyLinesAroundClassBody:
-  Enabled: false
+  Enabled: true
 
 Layout/EmptyLinesAroundModuleBody:
-  Enabled: false
+  Enabled: true
 
 Layout/FirstParameterIndentation:
   Enabled: false
