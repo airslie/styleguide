@@ -198,3 +198,9 @@ Style/PercentLiteralDelimiters:
     '%W': '()'
     '%i': '()'
     '%I': '()'
+
+# Cucumber worlds often have pairs of domain + web methods that need the same signature.
+Lint/UnusedMethodArgument:
+  Enabled: true
+  Exclude:
+    - features/support/worlds/**/*
