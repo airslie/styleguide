@@ -25,10 +25,10 @@ Performance/RegexpMatch:
   Enabled: false
 
 Lint/UnusedMethodArgument:
-  Enabled: false
+  Enabled: true
 
 Style/SpecialGlobalVars:
-  Enabled: false
+  Enabled: true
 
 Metrics/BlockLength:
   Enabled: false
@@ -55,10 +55,10 @@ Metrics/ModuleLength:
   Max: 100
 
 Rails/HasAndBelongsToMany:
-  Enabled: false
+  Enabled: true
 
 Rails/Validation:
-  Enabled: false
+  Enabled: true
 
 Naming/AccessorMethodName:
   Enabled: true
@@ -67,10 +67,10 @@ Style/Alias:
   Enabled: true
 
 Layout/AlignArray:
-  Enabled: false
+  Enabled: true
 
 Layout/AlignHash:
-  Enabled: false
+  Enabled: true
 
 Layout/AlignParameters:
   Enabled: false
@@ -85,7 +85,7 @@ Style/BracesAroundHashParameters:
   Enabled: false
 
 Layout/ClosingParenthesisIndentation:
-  Enabled: false
+  Enabled: true
 
 Style/Documentation:
   Enabled: false
@@ -120,7 +120,7 @@ Style/NumericLiterals:
   Enabled: false
 
 Naming/PredicateName:
-  Enabled: false
+  Enabled: true
 
 Style/RegexpLiteral:
   Enabled: true
