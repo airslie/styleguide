@@ -207,3 +207,7 @@ Lint/UnusedMethodArgument:
   Enabled: true
   Exclude:
     - features/support/worlds/**/*
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
