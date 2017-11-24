@@ -18,6 +18,9 @@ AllCops:
   UseCache: true
   DisabledByDefault: false
 
+Rails:
+  Enabled: true
+
 Rails/SkipsModelValidations:
   Enabled: false
 
