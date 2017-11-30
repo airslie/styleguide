@@ -21,6 +21,9 @@ AllCops:
 Rails:
   Enabled: true
 
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
 Rails/SkipsModelValidations:
   Enabled: false
 
