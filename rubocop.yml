@@ -21,6 +21,12 @@ AllCops:
 Rails:
   Enabled: true
 
+Layout/ClassStructure:
+  Enabled: true
+
+Lint/MissingCopEnableDirective:
+  Enabled: false
+
 Lint/AmbiguousRegexpLiteral:
   Enabled: false
 
