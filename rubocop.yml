@@ -69,6 +69,9 @@ Metrics/ModuleLength:
 Rails/HasAndBelongsToMany:
   Enabled: true
 
+Rails/InverseOf:
+  Enabled: false
+
 Rails/Validation:
   Enabled: true
 
