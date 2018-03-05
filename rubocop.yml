@@ -223,3 +223,8 @@ Lint/UnusedMethodArgument:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - "spec/**/*"
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: true
+  MinNameLength: 2
+
