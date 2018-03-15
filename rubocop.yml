@@ -3,18 +3,22 @@ AllCops:
   TargetRubyVersion: 2.4
   # Default excludes. Note if a .rubocop.yml in a project dir overrides Exclude then
   # Rubocop replaces all these defaults rather than merging them.
-  Exclude:
-    - "*.gemspec"
-    - "vendor/**/*"
-    - "bin/**/*"
-    - "lib/tasks/**/*"
-    - "db/**/*"
-    - "spec/dummy/bin/**/*"
-    - "spec/dummy/lib/tasks/**/*"
-    - "spec/dummy/db/**/*"
-    - "tmp/**/*"
-    - "spec/dummy/tmp/**/*"
-    - "vendor/bundle/**/*"
+  # NB In Rubocop 0.53.0 specifying AllCops/Exclude in here (pulled in via default.yml in the
+  # project) causes an error if is also specified in .rubocop.yml in the project dir.
+  # Really rubocop should merge them. Hey ho.
+  # So for now remove the default Excludes here and add to the projects rubocop.yml.
+  # Exclude:
+  #   - "*.gemspec"
+  #   - "vendor/**/*"
+  #   - "bin/**/*"
+  #   - "lib/tasks/**/*"
+  #   - "db/**/*"
+  #   - "spec/dummy/bin/**/*"
+  #   - "spec/dummy/lib/tasks/**/*"
+  #   - "spec/dummy/db/**/*"
+  #   - "tmp/**/*"
+  #   - "spec/dummy/tmp/**/*"
+  #   - "vendor/bundle/**/*"
   UseCache: true
   DisabledByDefault: false
 
