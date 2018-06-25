@@ -29,7 +29,7 @@ Layout/ClassStructure:
   Enabled: true
 
 Lint/MissingCopEnableDirective:
-  Enabled: false
+  Enabled: true
 
 Lint/AmbiguousRegexpLiteral:
   Enabled: false
@@ -133,7 +133,7 @@ Style/IfUnlessModifier:
 Style/LambdaCall:
   Exclude:
     - Guardfile
-  Enabled: false
+  Enabled: true
 
 Style/NumericLiterals:
   Enabled: false
@@ -161,7 +161,7 @@ Style/StringLiterals:
   - double_quotes
 
 Style/WhenThen:
-  Enabled: false
+  Enabled: true
 
 Layout/MultilineMethodCallIndentation:
   Enabled: false
@@ -185,7 +185,7 @@ Layout/MultilineHashBraceLayout:
   Enabled: false
 
 Style/AsciiComments:
-  Enabled: false
+  Enabled: true
 
 Style/NumericPredicate:
   Enabled: false
@@ -194,7 +194,7 @@ Layout/MultilineArrayBraceLayout:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  Enabled: true
 
 Style/TernaryParentheses:
   Enabled: false
