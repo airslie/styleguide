@@ -195,6 +195,11 @@ Layout/MultilineArrayBraceLayout:
 
 Style/FrozenStringLiteralComment:
   Enabled: true
+  Exclude:
+    - Gemfile
+    - config.ru
+    - Rakefile
+    - Vagrantfile
 
 Style/TernaryParentheses:
   Enabled: false
