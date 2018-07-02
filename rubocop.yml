@@ -200,6 +200,7 @@ Style/FrozenStringLiteralComment:
     - config.ru
     - Rakefile
     - Vagrantfile
+    - "db/**/*"
 
 Style/TernaryParentheses:
   Enabled: false
