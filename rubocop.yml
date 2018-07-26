@@ -69,6 +69,9 @@ Metrics/MethodLength:
 Metrics/ModuleLength:
   Enabled: true
   Max: 100
+  Exlude:
+    - "spec/**/*"
+    - "features/**/*"
 
 Rails/HasAndBelongsToMany:
   Enabled: true
