@@ -237,4 +237,14 @@ Lint/AmbiguousBlockAssociation:
 Naming/UncommunicativeMethodParamName:
   Enabled: true
   MinNameLength: 2
+  AllowedNames:
+    - io
+    - id
+    - to
+    - by
+    - 'on'
+    - in
+    - at
+    - ip
+    - q
 
