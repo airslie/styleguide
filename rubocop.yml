@@ -65,6 +65,8 @@ Metrics/LineLength:
 Metrics/MethodLength:
   Enabled: true
   Max: 12
+  Exclude:
+    - "db/**/*"
 
 Metrics/ModuleLength:
   Enabled: true
@@ -72,6 +74,7 @@ Metrics/ModuleLength:
   Exclude:
     - "spec/**/*"
     - "features/**/*"
+    - "db/**/*"
 
 Rails/HasAndBelongsToMany:
   Enabled: true
