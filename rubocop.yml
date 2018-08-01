@@ -261,7 +261,6 @@ Style/MixinUsage:
     - "spec/dummy/bin/**/*"
 
 Lint/Syntax:
-  Enabled: true
   Exclude:
     - "bin/**/*"
     - "spec/dummy/bin/**/*"
