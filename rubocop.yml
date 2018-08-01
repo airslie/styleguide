@@ -258,3 +258,8 @@ Style/MixinUsage:
    Enabled: true
    Exclude:
     - "bin/**/*"
+
+ Lint/Syntax:
+   Enabled: true
+   Exclude:
+    - "bin/**/*"
