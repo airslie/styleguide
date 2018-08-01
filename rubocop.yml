@@ -254,3 +254,7 @@ Naming/UncommunicativeMethodParamName:
     - ip
     - q
 
+Style/MixinUsage:
+   Enabled: true
+   Exclude:
+    - "bin/**/*"
