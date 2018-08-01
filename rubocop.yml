@@ -258,8 +258,10 @@ Style/MixinUsage:
    Enabled: true
    Exclude:
     - "bin/**/*"
+    - "spec/dummy/bin/**/*"
 
  Lint/Syntax:
    Enabled: true
    Exclude:
     - "bin/**/*"
+    - "spec/dummy/bin/**/*"
