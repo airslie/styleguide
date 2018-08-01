@@ -255,13 +255,13 @@ Naming/UncommunicativeMethodParamName:
     - q
 
 Style/MixinUsage:
-   Enabled: true
-   Exclude:
+  Enabled: true
+  Exclude:
     - "bin/**/*"
     - "spec/dummy/bin/**/*"
 
- Lint/Syntax:
-   Enabled: true
-   Exclude:
+Lint/Syntax:
+  Enabled: true
+  Exclude:
     - "bin/**/*"
     - "spec/dummy/bin/**/*"
