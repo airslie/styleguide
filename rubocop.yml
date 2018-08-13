@@ -79,6 +79,9 @@ Metrics/ModuleLength:
 Rails/HasAndBelongsToMany:
   Enabled: true
 
+Rails/UniqBeforePluck:
+  Enabled: false
+
 Rails/InverseOf:
   Enabled: false
 
