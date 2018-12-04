@@ -52,6 +52,8 @@ Metrics/BlockLength:
 Metrics/AbcSize:
   Enabled: true
   Max: 15
+  Exclude:
+    - "db/**/*"
 
 Metrics/LineLength:
   Max: 100
@@ -61,6 +63,8 @@ Metrics/LineLength:
     - http
     - https
   Enabled: true
+  Exclude:
+    - "db/**/*"
 
 Metrics/MethodLength:
   Enabled: true
