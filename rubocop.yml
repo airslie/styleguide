@@ -195,16 +195,16 @@ Style/ClassAndModuleChildren:
   Enabled: false
 
 Layout/MultilineHashBraceLayout:
-  Enabled: false
+  Enabled: true
 
 Style/AsciiComments:
   Enabled: true
 
 Style/NumericPredicate:
-  Enabled: false
+  Enabled: true
 
 Layout/MultilineArrayBraceLayout:
-  Enabled: false
+  Enabled: true
 
 Style/FrozenStringLiteralComment:
   Enabled: true
@@ -216,7 +216,7 @@ Style/FrozenStringLiteralComment:
     - "db/**/*"
 
 Style/TernaryParentheses:
-  Enabled: false
+  Enabled: true
 
 Layout/DotPosition:
   Enabled: true
