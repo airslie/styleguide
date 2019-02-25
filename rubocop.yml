@@ -25,6 +25,16 @@ AllCops:
 Rails:
   Enabled: true
 
+Style/Encoding:
+  Enabled: true
+  Exclude:
+    - "db/data_schema.rb"
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+  Exclude:
+    - "db/data_schema.rb"
+
 Layout/ClassStructure:
   Enabled: true
 
