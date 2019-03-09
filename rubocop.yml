@@ -103,7 +103,7 @@ Naming/AccessorMethodName:
   Enabled: true
 
 Style/Alias:
-  Enabled: true
+  Enabled: false
 
 Layout/AlignArray:
   Enabled: true
