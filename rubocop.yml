@@ -121,7 +121,7 @@ Style/BlockDelimiters:
   Enabled: false
 
 Style/BracesAroundHashParameters:
-  Enabled: false
+  Enabled: true
 
 Layout/ClosingParenthesisIndentation:
   Enabled: true
