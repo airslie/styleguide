@@ -141,8 +141,9 @@ Layout/EmptyLinesAroundClassBody:
 Layout/EmptyLinesAroundModuleBody:
   Enabled: true
 
-Layout/FirstParameterIndentation:
-  Enabled: false
+# This causes an error in later versions of rubocop: "obsolete configuration found in .."
+# Layout/FirstParameterIndentation:
+#   Enabled: false
 
 Style/FormatString:
   Enabled: false
