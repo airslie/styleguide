@@ -105,13 +105,13 @@ Naming/AccessorMethodName:
 Style/Alias:
   Enabled: false
 
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Enabled: true
 
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: true
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: false
 
 Style/BarePercentLiterals:
@@ -253,7 +253,7 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - "spec/**/*"
 
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: true
   MinNameLength: 2
   AllowedNames:
