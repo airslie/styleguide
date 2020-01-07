@@ -62,7 +62,7 @@ Metrics/AbcSize:
   Exclude:
     - "db/**/*"
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
   AllowHeredoc: true
   AllowURI: true
