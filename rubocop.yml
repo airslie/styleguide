@@ -87,6 +87,15 @@ Metrics/ModuleLength:
     - "features/**/*"
     - "db/**/*"
 
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
 Rails/HasAndBelongsToMany:
   Enabled: true
 
