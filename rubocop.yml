@@ -120,9 +120,6 @@ Style/BarePercentLiterals:
 Style/BlockDelimiters:
   Enabled: false
 
-Style/BracesAroundHashParameters:
-  Enabled: true
-
 Layout/ClosingParenthesisIndentation:
   Enabled: true
 
