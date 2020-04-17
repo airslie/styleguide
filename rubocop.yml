@@ -289,7 +289,7 @@ Style/ExponentialNotation:
   Enabled: true
 
 Style/DisableCopsWithinSourceCodeDirective:
-  Enabled: true
+  Enabled: false
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
