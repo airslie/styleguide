@@ -284,3 +284,12 @@ Lint/RaiseException:
 
 Lint/StructNewOverride:
   Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
+
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
