@@ -272,6 +272,7 @@ Naming/MethodParameterName:
     - at
     - ip
     - q
+    - dp
 
 Style/MixinUsage:
   Enabled: true
@@ -293,6 +294,3 @@ Style/DisableCopsWithinSourceCodeDirective:
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
-
-Naming/MethodParameterName:
-  MinNameLength: 2
