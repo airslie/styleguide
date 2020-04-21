@@ -294,5 +294,5 @@ Style/DisableCopsWithinSourceCodeDirective:
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
 
-Naming/MinArgNameLength:
+Naming/MethodParameterName:
   MinNameLength: 2
