@@ -294,3 +294,9 @@ Style/DisableCopsWithinSourceCodeDirective:
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
+Style/SlicingWithRange:
+  Enabled: true
