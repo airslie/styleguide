@@ -315,3 +315,6 @@ Style/RedundantRegexpEscape:
 
 Style/RedundantFetchBlock:
   Enabled: true
+
+Style/FormatStringToken:
+  Enabled: false
