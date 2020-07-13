@@ -359,7 +359,7 @@ Style/CaseLikeIf:
   Enabled: true
 
 Style/HashAsLastArrayItem:
-  Enabled: true
+  Enabled: false
 
 Style/HashLikeCase:
   Enabled: true
