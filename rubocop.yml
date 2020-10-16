@@ -21,6 +21,7 @@ AllCops:
   #   - "vendor/bundle/**/*"
   UseCache: true
   DisabledByDefault: false
+  NewCops: enable
 
 Rails:
   Enabled: true
