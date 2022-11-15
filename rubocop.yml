@@ -1,6 +1,6 @@
 AllCops:
   DisplayCopNames: true
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 3.0
   # Default excludes. Note if a .rubocop.yml in a project dir overrides Exclude then
   # Rubocop replaces all these defaults rather than merging them.
   # NB In Rubocop 0.53.0 specifying AllCops/Exclude in here (pulled in via default.yml in the
