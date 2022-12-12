@@ -121,9 +121,6 @@ Layout/ArrayAlignment:
 Layout/HashAlignment:
   Enabled: true
 
-Layout/ParameterAlignment:
-  Enabled: false
-
 Style/BarePercentLiterals:
   Enabled: false
 
