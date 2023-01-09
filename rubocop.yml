@@ -483,3 +483,6 @@ Rails/WhereNot: # (new in 2.8)
   Enabled: true
 Performance/Sum: # (new in 1.8)
   Enabled: true
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: either
