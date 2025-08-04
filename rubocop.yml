@@ -163,7 +163,7 @@ Style/LambdaCall:
 Style/NumericLiterals:
   Enabled: false
 
-Naming/PredicateName:
+Naming/PredicatePrefix:
   Enabled: true
 
 Style/RegexpLiteral:
