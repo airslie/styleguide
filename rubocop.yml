@@ -23,10 +23,6 @@ AllCops:
   DisabledByDefault: false
   NewCops: enable
 
-Style/HashSyntax:
-  Enabled: true
-  EnforcedShorthandSyntax: always
-
 Rails:
   Enabled: true
 
@@ -489,4 +485,4 @@ Performance/Sum: # (new in 1.8)
   Enabled: true
 Style/HashSyntax:
   Enabled: true
-  EnforcedShorthandSyntax: either
+  EnforcedShorthandSyntax: always
